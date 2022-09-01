@@ -221,32 +221,30 @@ survey_flow
 ]
 
 ---
-## Measuring Compliance I
+## Measuring Compliance 
+
+.panelset.sideways[
+
+.panel[.panel-name[Automatic Download]
 
 .center[
-#### Automatic Download
 
-
-```{r out.width="20%"}
+```{r out.width="40%"}
 knitr::include_graphics("screen2.png")
 ```
 ]
-
----
-### Measuring Compliance II: Media Consumption
+]
+.panel[.panel-name[Storage Information]
 
 .center[
 
-#### Storage Information
-
-```{r out.width="20%"}
+```{r out.width="40%"}
 knitr::include_graphics("screen1.png")
 ```
 
 ]
-
---
-
+]
+]
 
 ---
 class:middle
