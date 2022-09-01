@@ -52,8 +52,16 @@ class:middle
 
 .panel[.panel-name[WhatsApp]
 
-#### .fade[WhatsApp is a worldwide popular end-to-end encrypted messaging app allowing both direct and ingroup communications with close to 2 billion around the world]
+.darkblue[**WhatsApp is an end-to-end encrypted messaging app**]
 
+- Close to 2 billion active users.
+
+- Same number of active users of YT. Only behind Facebook. 
+
+- Allows for both direct and group communication.
+
+- Allows for audio and video calls, as well as sharing of media content. 
+ 
 ]
 
 .panel[.panel-name[Usage in Brazil]
@@ -62,15 +70,11 @@ class:middle
 
 
 
-- Most used app for all purposes: .red[talk to family & friends, do business & pay bills, consume news, talk politics, among others] ([Reuters Institute, 2021](https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2021)). 
+- It is the most used app for all purposes: .red[talk to family & friends, do business & pay bills, consume news, talk politics, among others] ([Reuters Institute, 2021](https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2021)). 
 
 
+- It is used by .red[48% of population to read news], despite having no “news feed” ([Reuters Institute, 2021](https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2021))
 
-- Used by .red[48% of population to read news], despite having no “news feed” ([Reuters Institute, 2021](https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2021))
-
-- Across the world, .red[Brazilians are the most concerned about misinformation]. 
-
-- And .red[WhatsApp is the main social media application] where users report to see more misinformation. 
 
 ]
 ]
@@ -84,24 +88,46 @@ knitr::include_graphics("nyt.png")
 ```
 ]
 
----
-class:middle, inverse, center
-
-## Field Experiment: An WhatsApp Media-Constrained Deactivation
+.footnote[Source: [here](https://www.nytimes.com/2018/10/19/technology/whatsapp-brazil-presidential-election.html) and [here](https://www.nytimes.com/2018/10/17/opinion/brazil-election-fake-news-whatsapp.html)]
 
 ---
+class: middle
+
+### Literature
+
+
+- No research so far on the causal effects of WhatsApp on users' likelihood to fall for misinformation and other political attitudes. 
+
+--
+
+- .red[Asimovic et. al. 2021 and Alcott et. al. 2020] use deactivation experiments on Facebook as an strategy to identify causal effects of social media usage.
+--
+
+- WhatsApp deactivation is considerably more challenging.
+
+  - WhatsApp is the most used app for all purposes in Brazil.
+  - No easy way back to the app.
+  - Little policy implication.
+
+--
+
+---
+class:middle
+
 ###  Intervention 
 
-Deactivation experiments have been recently used to causally identify the effects of Facebook on users' behavior and attitudes .red[(Asimovic et al 2021 and Alcott et al 2020)]. Deactivating WhatsApp users is **theoretically and empirically hard**.
+`r icons::fontawesome("arrow-alt-circle-right")` **Our Solution:** .red[WhatsApp Media Deactivation].
+
+--
+- Media (videos and images) represent the main channel through which misinformation and polarizing content spreads on WhatsApp .red[(Resende et al. 2019; Freitas Melo et al. 2019, Garimella and Tyson, 2018, Garimella and Eckles, 2020, Machado et al. 2019)].
+
+- Reduce exposure to media received on WhatsApp, and cut exposure to misinformation and polarizing content ahead of the election in Brazil. 
 
 
 --
 
-`r icons::fontawesome("arrow-alt-circle-right")` **Our Solution:** .black[cut channels through which users' are exposed to misinformation  and polarizing content.]
 
---
-
-`r icons::fontawesome("arrow-alt-circle-right")` **Experiment:** Offer respondents a monetary incentive to:
+`r icons::fontawesome("arrow-alt-circle-right")` **Experiment:** Offers respondents a monetary incentive to:
 
 - Disable their automatic download of media on WhatsApp.
 - Do not watch any media on WhatsApp.
@@ -158,21 +184,6 @@ survey_flow
 
 ]
 
-.panel[.panel-name[Timeline]
-
-- **Start Recruitment:** Between September 2th - 5th
-
-- **Start the Experiment** September 15th
-
-- **Activation of the Control + First Compliance**: September 18th
-
-- **Treatment duration**: From September 15th to October 6th
-
-- **Presidential Election**: October 2
-
-
-]
-
 .panel[.panel-name[Treatment Groups]
 
 `r icons::fontawesome("arrow-alt-circle-right")` **Treatment**
@@ -192,31 +203,46 @@ survey_flow
 - Weakly screenshots of storage of media consumption on WhatsApp
 
 ]
+
+.panel[.panel-name[Timeline]
+
+- **Start Recruitment:** Between September 2th - 5th
+
+- **Start the Experiment** September 15th
+
+- **Activation of the Control + First Compliance**: September 18th
+
+- **Treatment duration**: From September 15th to October 6th
+
+- **Presidential Election**: October 2
+
+
+]
 ]
 
 ---
-## Ways to Measure Compliance
-
-To measure compliance, we will ask participants to upload through a qualtrics survey screenshots of their WhatsApp.
-
---
-
-.panelset.sideways[
-.panel[.panel-name[Automatic Download]
+## Measuring Compliance I
 
 .center[
-```{r out.width="35%"}
+#### Automatic Download
+
+
+```{r out.width="40%"}
 knitr::include_graphics("screen2.png")
 ```
 ]
-]
-.panel[.panel-name[Storage Information]
+
+---
+### Measuring Compliance II: Media Consumption
+
 .center[
-```{r out.width="35%"}
+
+#### Storage Information
+
+```{r out.width="40%"}
 knitr::include_graphics("screen1.png")
 ```
-]
-]
+
 ]
 
 --
@@ -230,7 +256,7 @@ class:middle
 --
 #### .darkblue[Misinformation] 
 
-- False Headlines published on fact-checking webpages during the month of the experiment + True headlines from mainstream media.
+- False Headlines published by fact-checking webpages during the month of the experiment + True headlines from mainstream media.
 
 --
 
@@ -254,20 +280,22 @@ class:middle
 class:middle
 ## Hypotheses
 
+--
 
-.pull-right-wide[
+- H1a: Users using the Media-Constrained WhatsApp will display a .red[higher ability to accurately identify FALSE headlines] compared to their counterparts using the regular WhatsApp.
 
-H1a: Users using the Media-Constrained WhatsApp will display a .red[higher ability to accurately identify FALSE headlines] compared to their counterparts using the regular WhatsApp.
+- H1b: Users using the Media-Constrained WhatsApp will display .red[lower ability to to accurately identify TRUE headlines from  mainstream news] compared to their counterparts  using the regular WhatsApp.
 
-H1b: Users using the Media-Constrained WhatsApp will display .red[lower levels of knowledge on mainstream news headlines] compared to their counterparts  using the regular WhatsApp.
+--
 
-H2: Users using the Media-Constrained WhatsApp  will display .red[lower levels of outgroup partisan polarization] compared to their counterparts using the regular WhatsApp.
+- H2: Users using the Media-Constrained WhatsApp  will display .red[lower levels of outgroup partisan polarization] compared to their counterparts using the regular WhatsApp.
 
+--
 
-H3: Users using the Media-Constrained WhatsApp will display .red[higher levels of the aggregated index of subjective well-being] compared to their counterparts using the regular WhatsApp.
+- H3: Users using the Media-Constrained WhatsApp will display .red[higher levels of the aggregated index of subjective well-being] compared to their counterparts using the regular WhatsApp.
 
+--
 
-] 
 
 
 ---
@@ -280,19 +308,19 @@ class:middle,
 ## Summary
 
 
-**Recruitment**: Four days using Facebook Ads
+**Recruitment**: Facebook Ads
 
 **Experimental Condition:**
 
-- **Treatment** Full-week with automatic download disabled
-- **Control**: Three days with no-media.
+- **Treatment** Full-week of no media
+- **Control**: Three days with no media.
 
 **Experiment Assignment:** After uploading proof of disabling automatic download of media.
 
 **Responses:**
-  - 540 complete responses
-  - 317 passed  the filters
-  - 74 invited to joint the expeirment (August 19-20)
+  - 540 complete responses for the screening
+  - 317 passed  the filters 
+  - 74 invited to join the experiment (August 19-20)
 
 ---
 ## Attrition Rate
@@ -365,4 +393,38 @@ class:inverse, middle, center
 ## What else? 
 
 ### Thanks!
+
+---
+## Power Analysis
+
+.panelset.sideways[
+
+.panel[.panel-name[Effect Size in SD]
+
+
+### Alcott et. al.
+
+- **Polarization index:** -0.16 
+- **News Knowledge index:** -0.19 
+- **Subjective well-being index:** 0.09 
+
+### Asimovic et. al.
+
+- **Outgroup Regard index:** -0.24
+- **News Knowledge index:** -0.27
+- **Subjective well-being index:** 0.18
+
+
+]
+
+
+.panel[.panel-name[Power Analysis]
+
+.center[
+```{r out.width="100%"}
+knitr::include_graphics("sims_with_covariate.png")
+```
+]
+]
+]
 

@@ -31,8 +31,9 @@
 
 .footnote {
   position: absolute;
-  bottom: 60px;
+  bottom: 40px;
   padding-right: 4em;
+  padding-top: 10em;
   font-size: 0.8em;
 }
 
@@ -64,7 +65,7 @@ div.my-footer span {
     position: absolute;
     left: 20px;
     font-weight: bold;
-    bottom: 10px;
+    bottom: 5px;
 }
 .pull-left-narrow {
   float: left;
