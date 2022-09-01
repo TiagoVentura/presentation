@@ -36,6 +36,7 @@
   font-size: 0.8em;
 }
 
+
 .title-slide h1 {
   font-size: 2.25em;
 }
@@ -81,8 +82,12 @@ div.my-footer span {
   font-family: "Source Code Pro", "Lucida Console", monospace;
 }
 
+
 .remark-slide-number {
-  position: inherit;
+  font-size: 15pt;
+  margin-bottom: -11.6px;
+  margin-right: 10px;
+  color: white; /* white */
 }
 
 .remark-slide-number .progress-bar-container {

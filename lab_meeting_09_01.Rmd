@@ -14,11 +14,7 @@ output:
       highlightLines: true
       countIncrementalSlides: false
       titleSlideClass: ["center", "middle",]
-      slideNumberFormat: |
-        <div class="progress-bar-container">
-          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
-          </div>
-        </div>
+      slideNumberFormat: "%current%"
 ---
 layout: true
 
@@ -95,26 +91,27 @@ class:middle, inverse, center
 
 ---
 ###  Intervention 
-Deactivation experiments have been recently used to causally identify the effects of social media on users' behavior ans attitudes .red[(Asimovic et al 2021 and Alcott et al 2020)]. Deactivating WhatsApp users is **theorethically and empirically unfeasible**.
+
+Deactivation experiments have been recently used to causally identify the effects of Facebook on users' behavior and attitudes .red[(Asimovic et al 2021 and Alcott et al 2020)]. Deactivating WhatsApp users is **theoretically and empirically hard**.
 
 
 --
 
-`r icons::fontawesome("arrow-alt-circle-right")` **Our Solution:** .black[cut channels through which users' are exposed to misinformation  and polarizing content]
+`r icons::fontawesome("arrow-alt-circle-right")` **Our Solution:** .black[cut channels through which users' are exposed to misinformation  and polarizing content.]
 
 --
 
-`r icons::fontawesome("arrow-alt-circle-right")` **Experiment:** Offer respondents a monetary incentive to
+`r icons::fontawesome("arrow-alt-circle-right")` **Experiment:** Offer respondents a monetary incentive to:
 
-- Disable their automatic download of media on WhatsApp
-- Dot not purposefully click and watch any media on WhatsApp
+- Disable their automatic download of media on WhatsApp.
+- Do not watch any media on WhatsApp.
 
 --
 
 `r icons::fontawesome("arrow-alt-circle-right")` **Treatment Period:** Three weeks:
 
-- **Start:** Two week before presidential elections in Brazil
-- **End:** One week after the voting day
+- **Start:** Two weeks the before presidential elections in Brazil.
+- **End:** One week after the voting day.
 
 
 
@@ -156,7 +153,7 @@ survey_flow
 
 - Accept to join the study
 
-- `r icons::fontawesome("question")` Received images about politics on WhatsApp
+- `r icons::fontawesome("question")` .red[Received images about politics on WhatsApp] `r icons::fontawesome("question")`
 
 
 ]
@@ -239,10 +236,10 @@ class:middle
 
 #### .darkblue[Polarization]
 
-- Affective polarization (Feeling Thermomether)
-- Social Polarization (Watching the world cup with an outgroup)
-- Issue Polarization (Abortion, gun control, etc..)
+- Affective polarization (Feeling Thermometer)
+- Social Polarization (i.e. Watching the world cup with an outgroup)
 - False Polarization ('Where do I observe the two main candidates?')
+- `r icons::fontawesome("question")` .red[Issue Polarization] `r icons::fontawesome("question")`
 
 --
 #### .darkblue[Subjective Well-being]
@@ -279,7 +276,7 @@ class: middle, center, inverse
 
 ---
 class:middle, 
-## Pilot Summary
+## Summary
 
 
 **Recruitment**: Four days using Facebook Ads
@@ -297,7 +294,7 @@ class:middle,
   - 74 invited to joint the expeirment (August 19-20)
 
 ---
-## Pilot Analysis: Attrition Rate
+## Attrition Rate
 
 .panelset.sideways[
 
@@ -322,7 +319,7 @@ In addition, we started with email communication, and moved later to direct What
 ]
 
 ---
-## Pilot Analysis: Evaluating Compliance Checks
+## Evaluating Compliance Checks
 
 .center[
 ```{r out.width="100%"}
@@ -331,7 +328,16 @@ knitr::include_graphics("att_cr.png")
 ]
 
 ---
-## Pilot Analysis: Comparing Demographics
+### Changes in Media Consumption
+
+.center[
+```{r out.width="100%"}
+knitr::include_graphics("bytes.png")
+```
+]
+
+---
+## Comparing Demographics
 
 .center[
 ```{r out.width="100%"}
@@ -346,13 +352,11 @@ knitr::include_graphics("att_dem.png")
 - Working with exposure (Have you seen this headline before?).  What else is important to be included in the survey?
 
 #### Headlines selection
-- Any advice on how to select the headlines? 
+- Any advice on how to select the headlines? .red[Should we take advantage of the compliance survey and  add some headline tasks while collecting screenshots for compliance?]
 
-    - .red[Should we take advantage of the compliance survey and  add some headline tasks while collecting screenshots for compliance?]
-
-#### Compliance
+#### Compliance: .black[What can we do better?]
  
-#### Descriptive information 
+#### Descriptive information: .black[Which data should we collect?] 
 
 ---
 class:inverse, middle, center
