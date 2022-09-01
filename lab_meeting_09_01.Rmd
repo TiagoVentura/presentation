@@ -239,9 +239,10 @@ class:middle
 - Affective polarization (Feeling Thermometer)
 - Social Polarization (i.e. Watching the world cup with an outgroup)
 - False Polarization ('Where do I observe the two main candidates?')
-- `r icons::fontawesome("question")` .red[Issue Polarization] `r icons::fontawesome("question")`
+- .red[Issue Polarization?]
 
 --
+
 #### .darkblue[Subjective Well-being]
 
 - How did you feel last week? (Happy, Anxious, etc...)
