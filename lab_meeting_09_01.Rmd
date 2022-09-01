@@ -227,7 +227,7 @@ survey_flow
 #### Automatic Download
 
 
-```{r out.width="30%"}
+```{r out.width="20%"}
 knitr::include_graphics("screen2.png")
 ```
 ]
@@ -239,7 +239,7 @@ knitr::include_graphics("screen2.png")
 
 #### Storage Information
 
-```{r out.width="28%"}
+```{r out.width="20%"}
 knitr::include_graphics("screen1.png")
 ```
 
